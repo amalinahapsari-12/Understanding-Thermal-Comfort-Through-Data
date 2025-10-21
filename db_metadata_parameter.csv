@@ -1,0 +1,24 @@
+parameter,description
+building_id,Unique building identifier [integer]
+building_id_inf,"Flag indicating if unique building identifier was from original data source [no] or inferred [yes] from unique groupings of publication, country, city, season, building type, and cooling type"
+contributor,Principal contact person regarding the data
+publication,Published paper describing the project from where the data was collected
+region,Region of field study
+country,Country of field study
+city,City of field study
+lat,Latitude of city [°]
+lon,Latitude of city [°]
+climate,Type of climate according to Köppen climate classification
+building_type,"Type of building [office, multifamily housing, classroom, senior center, other]"
+cooling_type,"Cooling strategy of building [air conditioned, mixed mode, naturally ventilated]"
+year,Year of field study [yyyy]
+records,Number of records for that building ID
+has_age,"Flag indicating if there age was recorded [yes, no] and if it was a categorical variable in the original data source [categorical]"
+has_ec,"Flag indicating if environmental controls were in the original data source [yes, no]"
+has_timestamp,"Flag indicating if measurement timestamp was in the original data source [yes, no]"
+timezone,IANA time zone of field study
+met_source,"Source of meteorological data for t_out and rh_out [ghcn_d = from GHCN-D, original_data = from original data source; rp884 = from RP884 database]"
+isd_station,"ISD station code for t_out_isd, rh_out_isd and t_mot_isd"
+isd_distance,Estimated distance of ISD station to city of field study [km]
+database,"Version of database when data source was added [1, 2, 2.1]"
+quality_assurance,"Flag indicating if dataset from contributor passed automated quality assurance check [pass, fail]"
