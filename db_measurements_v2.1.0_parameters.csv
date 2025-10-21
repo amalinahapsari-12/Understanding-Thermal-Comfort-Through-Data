@@ -1,0 +1,53 @@
+parameter,description
+building_id,Unique building identifier [integer]. Note: some building IDs are inferred - see building_id_inf in metadata table
+timestamp,Timestamp of measurement [yyyy-mm-dd]
+season,"Season measurement was made [summer, winter, hot/wet, cool/dry]. Note: based on the following assumptions when timestamp and location are known: northern hemisphere latitudes <20 are hot/wet from May-Oct and cool/dry from Nov-Apr; northern hemisphere latitudes >=20 are summer May-Oct and winter from Nov-Apr; vice versa for Southern Hemisphere"
+subject_id,Unique subject identifier for future studies with repeat samples [integer]
+age,Age of subject [years]. Note: some studies used age ranges instead of years - see has_age in metadata table
+gender,"Gender of subject [female, male]"
+ht,Height of subject [m]
+wt,Weight of subject [kg]
+ta,Air temperature measured in the occupied zone [°C]
+ta_h,Air temperature measured at 1.1 m above the floor [°C]
+ta_m,Air temperature measured at 0.6 m above the floor [°C]
+ta_l,Air temperature measured at 0.1 m above the floor [°C]
+top,Operative temperature calculated for the occupied zone [°C]
+tr,Radiant temperature measured in the occupied zone [°C]
+tg,Globe temperature measured in the occupied zone [°C]
+tg_h,Globe temperature measured at 1.1 m above the floor [°C]
+tg_m,Globe temperature measured at 0.6 m above the floor [°C]
+tg_l,Globe temperature measured at 0.1 m above the floor [°C]
+rh,Relative humidity [%]
+vel,Air speed measured in the occupied zone [m/s]
+vel_h,Air speed measured at 1.1 m above the floor [m/s]
+vel_m,Air speed measured at 0.6 m above the floor [m/s]
+vel_l,Air speed measured at 0.1 m above the floor [m/s]
+vel_r,Relative air speed used to calculate the PMV [m/s]
+met,Average metabolic rate of the subject [met]
+clo,Intrinsic clothing ensemble insulation of the subject [clo]
+clo_d,"Dynamic clothing, used to calculate the PMV [clo]"
+activity_10,Average metabolic rate of the subject in the last 10 minutes [met]
+activity_20,Average metabolic rate of the subject in the last 20 minutes [met]
+activity_30,Average metabolic rate of the subject in the last 30 minutes [met]
+activity_60,Average metabolic rate of the subject in the last 60 minutes [met]
+thermal_sensation,Vote on the ASHRAE thermal sensation scale [-3 (cold) to 0 (neutral) +3 (hot)]
+pmv,"Predicted mean vote, calculated in compliance with the ISO 7730"
+pmv_ce,"Predicted mean vote, calculated in compliance with the ASHRAE 55 2020"
+ppd,Predicted percentage dissatisfied [%] calculated in compliance with the ISO 7730
+ppd_ce,Predicted percentage dissatisfied [%] calculated in compliance with the ASHRAE 55 2020
+set,Standard effective temperature [°C]
+thermal_acceptability,"Thermal acceptability [acceptable, unacceptable]"
+thermal_preference,"Thermal preference [cooler, no change, warmer]"
+thermal_comfort,Thermal comfort [1 (very uncomfortable) to 6 (very comfortable)]
+air_movement_acceptability,"Air movement acceptability [acceptable, unacceptable]"
+air_movement_preference,"Air movement preference [less, no change, more]"
+blind_curtain,State of blinds or curtains [0 = open; 1 = closed]
+fan,"State of fan [0 = off, 1 = on]"
+window,"State of window [0 = open, 1 = closed]"
+door,"State of doors [0 = open, 1 = closed]"
+heater,"State of heater [0 = off, 1 = on]"
+t_out ,Outdoor air temperature from original dataset [°C]
+rh_out,Outdoor relative humidity from original dataset [%]
+t_out_isd,Average daily outdoor air temperature from ISD [°C]
+rh_out_isd,Average relative humidity from ISD [%]
+t_mot_isd,Calculated 7-day running mean outdoor temperature [°C]
